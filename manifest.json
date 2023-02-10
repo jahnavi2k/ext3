@@ -1,9 +1,14 @@
 {
-    "name": "PlayPause",
-    "version": "1.0.0",
-    "description": "play/pause youtube video",
-    "manifest_version": 3,
-    "action": {
-        "default_popup": "index.html"
-    }
+  "manifest_version": 3,
+  "name": "YouTube Play/Pause",
+  "version": "1.0",
+  "description": "A simple Chrome extension that allows you to play or pause the currently playing YouTube video",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["*://*/*"],
+  "permissions": ["activeTab", "tabs", "scripting"]
 }
