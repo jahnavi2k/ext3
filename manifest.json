@@ -16,14 +16,5 @@
     "activeTab",
     "tabs",
     "scripting"
-  ],
-  "externally_connectable": {
-    "ids": [
-      "heamhglbjhpinbpcbocjljpgjdnagoon"
-    ],
-    "matches": [
-      "https://youtube.com/*"
-    ],
-    "accepts_tls_channel_id": false
-  }
+  ]
 }
