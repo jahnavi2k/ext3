@@ -2,11 +2,13 @@ window.onload = function () {
   var playPauseButton = document.getElementById("myButton1");
 
   playPauseButton.addEventListener("click", function () {
+    console.log("clicked");
     var port = chrome.runtime.connect({ name: "popup" });
     port.postMessage({ action: "playpause" });
-    port.onMessage.addListener(function (response) {
-      console.log(response);
-    });
+    // port.onMessage.addListener(function (response) {
+    //   console.log(response);
+    // }
+    // );
     window.onunload = function () {
       port.disconnect();
     };

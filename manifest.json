@@ -9,6 +9,21 @@
   "background": {
     "service_worker": "background.js"
   },
-  "host_permissions": ["*://*/*"],
-  "permissions": ["activeTab", "tabs", "scripting"]
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+  "externally_connectable": {
+    "ids": [
+      "heamhglbjhpinbpcbocjljpgjdnagoon"
+    ],
+    "matches": [
+      "https://youtube.com/*"
+    ],
+    "accepts_tls_channel_id": false
+  }
 }
